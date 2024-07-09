@@ -1,0 +1,36 @@
+.projects {
+    padding: 70px 5.1244vw
+}
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 30px;
+    .card {
+        max-width: 500px;
+        height: 400px;
+        border: 1px solid gold;
+        border-radius: 10px;
+        img {
+            object-fit: fill;
+            border-radius: 10px;
+        }
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            font-size: 30px;
+            color: gold;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .card {
+        img {
+            width: 300px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.edu {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h1 {
+                color: gold;
+            }
+            h3 {
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: gold;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    gap: 30px;
+    padding-top: 40px;
+    .card {
+        max-width:600px;
+        padding: 20px;
+        border: 2px solid gold;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-shrink: 0;
+        margin-bottom: 50px;
+        img {
+            width: 100px;
+            padding-top: 10px;
+        }
+        h2 {
+            color: white;
+            padding: 20px 0;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: gold;
+        }
+        p {
+            color: white;
+            line-height: 30px;
+            padding: 0 10px;
+        }
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: gold;
+        }
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:425px) {
+    .cards {
+        .card {
+            width: 300px;
+        }
+    }
+}

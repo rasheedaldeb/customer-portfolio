@@ -1,0 +1,45 @@
+footer {
+    border-top: 2px solid gold;
+    padding: 40px 6.1244vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            transition: 0.3s all;
+            &:hover {
+                color: gold;
+            }
+        }
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        a {
+            font-size: 30px;
+            color: white;
+            transition: 0.3s all;
+            &:hover {
+                color: gold;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    footer {
+        ul {
+            flex-direction: column;
+        }
+    }
+}

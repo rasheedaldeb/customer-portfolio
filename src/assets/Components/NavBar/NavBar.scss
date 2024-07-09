@@ -1,0 +1,126 @@
+nav {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5.1244vw;
+    position: fixed;
+    z-index: 20;
+
+    .list {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s all;
+            &:hover {
+                color: gold;
+            }
+        }
+    }
+    button {
+        width: 188px;
+        height: 52px;
+        border: none;
+        border-radius: 5px;
+        background-color: gold;
+    a{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid gold;
+            background: none;
+        }
+        &:hover a{
+            color: gold;
+        }
+    }
+    .bar {
+        display: none;
+    }
+}
+.mobile {
+    display: flex;
+    justify-content: flex-end;
+
+    .mobile-data {
+        width: 256px;
+        height: 100vh;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        display: none;
+        border: 1px solid gold;
+        background-color: rgba(0, 0, 0, 0.752);
+        z-index: 21;
+        .close {
+            font-size: 25px;
+            color: gold;
+            padding: 30px 20px;
+        }
+        .mobile-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            gap: 35px;
+            padding: 30px 20px 50px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            &:hover {
+                color: gold;
+            }
+        }
+        .mobile-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button {
+                width: 150px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                background-color: gold;
+                &:hover {
+                    border: 1px solid gold;
+                    background: none;
+                }
+                &:hover a{
+                    color: gold;
+                }
+            }
+        }
+    }
+}
+.scrol-nav {
+    transition: 0.3s all;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.583);
+}
+@media screen and (max-width:768px) {
+    nav {
+        img {
+            width: 75px;
+        }
+        .list {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+        .bar {
+            display: block;
+        }
+    }
+}
